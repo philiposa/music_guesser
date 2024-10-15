@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import views
 
 urlpatterns = [
+    path('', views.home_view, name='home'),
+    path('search/', views.search_view, name='search_view'),
     path('admin/', admin.site.urls),
+    path('callback/',views.spotify_callback,name='spotify_callback'),
 ]
