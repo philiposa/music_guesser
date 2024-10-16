@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Results</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <h1>Search Results</h1>
-    <p>Track: {{ track }}</p>
-    <a href="/">Go Back Home</a>
+    <div class="box">
+        <h1>Track Found</h1>
+        {% if track %}
+            <p><strong>Track Name:</strong> {{ track.name }}</p>
+            <p><strong>Artist:</strong> {{ track.artist }}</p>
+            <p><strong>Preview:</strong> <a href="{{ track.preview_url }}">Listen</a></p>
+        {% else %}
+            <p>No track found.</p>
+        {% endif %}
+    </div>
 </body>
 </html>
+

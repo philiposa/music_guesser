@@ -13,6 +13,6 @@ def home_view(request):
 
 def search_view(request):
     # Simulating search functionality (just placeholder logic)
-    query = request.GET.get('query', 'Bohemian Rhapsody')  # Default query
-    context = {'track': query}
-    return render(request, 'search_result.html', context)
+    query = request.GET.get('query', 'Bohe')  # Default query
+    track_info = search_track(query)
+    return render(request, 'search_result.html', {'track': track_info})
