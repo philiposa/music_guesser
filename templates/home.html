@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Music Guesser</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
 <body>
-    <h1>Welcome to Music Guesser!</h1>
-    <a href="/search/?query=Bohemian Rhapsody">Search for Bohemian Rhapsody</a>
+    <div class='circle'>
+        <h1>Welcome to Music Guesser!</h1>
+        <a class="centerlink" href="/search/?query=Bohemian Rhapsody">Search for Bohemian Rhapsody</a>
+    </div>
 </body>
 </html>
+
