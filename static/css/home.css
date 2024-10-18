@@ -1,0 +1,38 @@
+body {
+    background-color: yellow;  
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;             
+    margin: 0;                 
+    text-align: center;  /* Center the content inside the body */
+}
+
+.circle {
+    width: 300px;         /* Adjusted the width */
+    height: 300px;        /* Adjusted the height */
+    background-color: lightblue; /* Circle background color */
+    border-radius: 50%;   /* Makes it a perfect circle */
+    display: flex;        /* Flexbox to center content */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    text-align: center;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: black;
+}
+
+.centerlink {
+    margin-top: 20px;
+    color: black;
+    text-decoration: underline;
+    display: block; /* Ensures it behaves as a block-level element */
+    text-align: center; /* Centers the text in the link */
+}
+
+
+

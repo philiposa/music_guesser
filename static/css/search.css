@@ -1,0 +1,30 @@
+/* Style the body */
+body {
+    background-color: yellow;  
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;             
+    margin: 0;                 
+}
+
+/* Style the green box */
+.box {
+    background-color: greenyellow;  
+    padding: 20px;                
+    border-radius: 15px;            
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    text-align: center;
+    width: 350px;  
+    height: 250px;          
+}
+
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
